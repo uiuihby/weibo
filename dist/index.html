@@ -8273,10 +8273,14 @@ undefined<!DOCTYPE html><html lang="en"><body><div id='titlePic'>https://wx1.sin
               $.ajax({
                  type: "post",
                  url: '/getData',
-                 data:JSON.stringify(data),
+                 data:data,
                  dataType: "json",
                  success: function(data){
+                    console.log(data);
                         alert("已下载")
+                          },
+                          error:function(data){
+                            alert("已下载")
                           }
              });
     
